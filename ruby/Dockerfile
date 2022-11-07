@@ -3,7 +3,7 @@ RUN apt-get update && apt-get install build-essential software-properties-common
 RUN /usr/share/rvm/bin/rvm install 1.8
 ENV PATH "$PATH:/usr/share/rvm/rubies/ruby-1.8.7-p374/bin"
 
-WORKDIR /app
+WORKDIR /root/app
 COPY . .
 
 CMD ["irb"]
