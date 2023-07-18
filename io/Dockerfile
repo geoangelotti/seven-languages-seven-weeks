@@ -29,7 +29,7 @@ RUN ./install_unix.sh
 ENV PATH=$PATH:$EERIEDIR/base/bin:$EERIEDIR/activeEnv/bin
 RUN eerie install https://github.com/IoLanguage/ReadLine.git
 
-WORKDIR /root/app
+WORKDIR /io
 COPY . .
 
 ENTRYPOINT [ "bash" ]

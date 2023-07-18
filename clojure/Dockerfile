@@ -2,7 +2,7 @@ FROM alpine
 
 RUN apk update && apk add leiningen
 
-WORKDIR /root/app
+WORKDIR /clojure
 COPY . .
 
 CMD [ "lein", "repl" ]

@@ -1,6 +1,6 @@
 FROM ruby:alpine
 
-WORKDIR /root/app
+WORKDIR /ruby
 COPY . .
 
 CMD ["irb"]
